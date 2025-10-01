@@ -77,3 +77,9 @@ const handleReset = () => {
 start.addEventListener("click", handleStart);
 stop.addEventListener("click", handleStop);
 reset.addEventListener("click", handleReset);
+
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('touchstart', () => {
+    btn.querySelector('.tooltiptext').style.visibility = 'hidden';
+  });
+});
