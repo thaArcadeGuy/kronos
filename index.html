@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kronos</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav id="navbar">
+        <div id="logo">
+          Kronos
+        </div>
+        <div class="toggle">
+          <img src="./assets/icons/shield_toggle.svg" alt="Toggle shield icon">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container" id="main-container">
+    <div id="stopwatch">
+    <div class="digit" id="hr">
+      00
+      <span class="text">hours</span>
+    </div>
+    <span class="separator">|</span>
+    <div class="digit" id="min">
+      00
+      <span class="text">minutes</span>
+    </div>
+    <span class="separator">|</span>
+    <div class="digit" id="sec">
+      00
+      <span class="text">seconds</span>
+    </div>
+  </div>
+  <div id="progressbar"></div>
+  <div id="buttons">
+    <button class="btn" id="start">
+      <img class="start-btn" src="./assets/icons/play_arrow.svg" alt="Play arrow icon">
+    </button>
+    <button class="btn" id="stop">
+      <img src="./assets/icons/stop.svg" alt="Stop icon" class="stop-btn">
+    </button>
+    <button class="btn" id="reset">
+      <img src="./assets/icons/replay.svg" alt="Replay icon" class="reset-btn">
+    </button>
+  </div>
+  </div>
+  <footer>
+    &copy; 2025 Kronos
+  </footer>
+</body>
+</html>
