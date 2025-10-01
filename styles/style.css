@@ -1,0 +1,175 @@
+@import "modern-normalize";
+
+:root {
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  width: 1600px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#navbar,
+#stopwatch,
+#main-container,
+#buttons,
+.digit {
+  display: flex;
+}
+
+#navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  background: #ffbf00;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.material-symbols-outlined {
+  color: rgb(133, 132, 126);
+}
+
+.toggle {
+  display: inline-block;
+  transform: scale(1.5);
+}
+
+#stopwatch {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.digit {
+  flex-direction: column;
+  align-items: center;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-size: 15rem;
+  font-weight: 700;
+}
+
+.separator {
+  border-left: 2px solid rgb(133, 132, 126);
+  height: 2.5rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: rgb(133, 132, 126);
+  font-weight: 200;
+  margin-top: -3rem;
+}
+
+#main-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#progress-bar {
+  border: 2px solid ;
+  width: 100%;
+  max-width: 60rem;
+}
+
+#buttons {
+  gap: 4rem;
+}
+
+.btn {
+  border: none;
+  background: inherit;
+  transform: scale(2.5);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+
+  .digit {
+    font-size: 10rem;
+  }
+
+  .btn {
+    transform: scale(2);
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .digit {
+    flex-direction: column;
+    font-size: 6rem;
+  }
+
+  #stopwatch {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .text {
+    margin-top: -1rem;
+  }
+
+  #main-container {
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+
+  .btn {
+    transform: scale(1.8);
+  }
+}

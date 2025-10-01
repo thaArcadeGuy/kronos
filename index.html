@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kronos</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shield_toggle" />
 </head>
 <body>
   <header>
@@ -13,42 +15,45 @@
           Kronos
         </div>
         <div class="toggle">
-          <img src="./assets/icons/shield_toggle.svg" alt="Toggle shield icon">
+           <span class="material-symbols-outlined">
+              shield_toggle
+           </span>
         </div>
       </nav>
     </div>
   </header>
   <div class="container" id="main-container">
     <div id="stopwatch">
-    <div class="digit" id="hr">
-      00
-      <span class="text">hours</span>
+      <div class="digit" id="hr">
+        00
+        <span class="text">hours</span>
+      </div>
+      <span class="separator"></span>
+      <div class="digit" id="min">
+        00
+        <span class="text">minutes</span>
+      </div>
+      <span class="separator"></span>
+      <div class="digit" id="sec">
+        00
+        <span class="text">seconds</span>
+      </div>
     </div>
-    <span class="separator">|</span>
-    <div class="digit" id="min">
-      00
-      <span class="text">minutes</span>
+    <div id="progress-bar"></div>
+    <div id="buttons">
+      <button class="btn" id="start">
+        <img class="start-btn" src="./assets/icons/play_arrow.svg" alt="Play arrow icon">
+      </button>
+      <button class="btn" id="stop">
+        <img src="./assets/icons/stop.svg" alt="Stop icon" class="stop-btn">
+      </button>
+      <button class="btn" id="reset">
+        <img src="./assets/icons/replay.svg" alt="Replay icon" class="reset-btn">
+      </button>
     </div>
-    <span class="separator">|</span>
-    <div class="digit" id="sec">
-      00
-      <span class="text">seconds</span>
-    </div>
-  </div>
-  <div id="progressbar"></div>
-  <div id="buttons">
-    <button class="btn" id="start">
-      <img class="start-btn" src="./assets/icons/play_arrow.svg" alt="Play arrow icon">
-    </button>
-    <button class="btn" id="stop">
-      <img src="./assets/icons/stop.svg" alt="Stop icon" class="stop-btn">
-    </button>
-    <button class="btn" id="reset">
-      <img src="./assets/icons/replay.svg" alt="Replay icon" class="reset-btn">
-    </button>
-  </div>
   </div>
   <footer>
+    <p>a guy from kasese</p>
     &copy; 2025 Kronos
   </footer>
 </body>
